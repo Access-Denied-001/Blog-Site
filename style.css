@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+    gap: 1rem;
+}
+
+.heading {
+    width: 30%;
+    text-align: center;
+}
+
+.main-content {
+    width: 65%;
+    display: grid;
+    row-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.card-container a {
+    border-radius: 10px;
+}
+
+.grid-item {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-container {
+    border-radius: 5px;
+}
+
+.blog-image{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.author-avatar-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.card-details {
+    padding-left: 15px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.author-info {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.author-post-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.blog-type {
+    display: block;
+    width: 35%;
+    height: 70%;
+}
+
+.blog-type-btn {
+    height: 100%;
+    width: 100%;
+    background: white;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.author-name {
+    color: rgb(1, 1, 250);
+}
