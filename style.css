@@ -53,6 +53,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    overflow: hidden;
 
     width: 300px;
     height: 450px;
@@ -115,6 +116,14 @@ a{
     height: 70%;
 }
 
+.author-name {
+    color: rgb(38, 38, 149);
+}
+
+.blog-date {
+    color: rgb(136, 126, 126);
+}
+
 .blog-type-btn {
     height: 100%;
     width: 100%;
@@ -123,6 +132,7 @@ a{
     border-radius: 5px;
 }
 
-.author-name {
-    color: rgb(1, 1, 250);
+.card-container:hover .image-container {
+    transform: scale(1.1);
+    transition-duration: 300ms;
 }
